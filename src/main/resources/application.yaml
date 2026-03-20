@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://ep-fragrant-wildflower-adfokk9t-pooler.c-2.us-east-1.aws.neon.tech/jhoss_palomino_28?sslmode=require
+    username: neondb_owner
+    password: npg_rsp07idNEtHD
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
